@@ -1,0 +1,14 @@
+-- This file goes on the computer in Minecraft
+
+args = {...}
+url = args[1] or "http://raspberrypi.local:3141"
+ 
+while true do
+  s = http.get(url).readAll()
+  if s == '1' then
+    rs.setOutput('back', true)
+  else
+    rs.setOutput('back', false)
+  end
+  sleep(tonumber(args[2]) or 1)
+end
