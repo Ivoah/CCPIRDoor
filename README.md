@@ -16,6 +16,6 @@ OUT -> 17
 
 The python file runs on the Raspberry Pi. You will have to run it as root: `sudo python PIR.py`
 
-The other file goes on the computer in Minecraft. You can either move it into the proper directory in your Minecraft saves folder, or you can run this command on the computer within Minecraft: `pastebin get n8Vh3Mv2` The command line parameters for the PIR program are: `PIR [raspberry pi url] [delay]`. The raspberry pi url has to have `http://` at the beginning and the port `:3141` at the end. Delay is how long to wait between polls. It is recommended to have at least a one second delay. The default values are `http://raspberrypi.local` and `1`.
+The other file goes on the computer in Minecraft. You can either move it into the proper directory in your Minecraft saves folder, or you can run this command on the computer within Minecraft: `pastebin get n8Vh3Mv2` The command line parameters for the PIR program are: `PIR [raspberry pi url] [delay]`. The raspberry pi url has to have `http://` at the beginning and the port `:3141` at the end. Delay is how long to wait between polls. It is recommended to have at least a one second delay. The default values are `http://raspberrypi.local:3141` and `1`.
 
 This program is not just limited to PIR sensors and doors. It could be expanded to control nearly any element in Minecraft using a variety of sensors connected to the Raspberry Pi.
