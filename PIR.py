@@ -9,15 +9,8 @@ from BaseHTTPServer import BaseHTTPRequestHandler
 setmode(BCM)
 
 SIG = 17
-VCC = 27
-GND = 22
 
 setup(SIG, IN)
-setup(VCC, OUT)
-setup(GND, OUT)
-
-output(VCC, HIGH)
-output(GND, LOW)
 
 class PIRRequestHandler(BaseHTTPRequestHandler):
     def do_GET(self):
